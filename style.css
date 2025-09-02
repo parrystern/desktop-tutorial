@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #001e40;
+}
+.app {
+    background: #fff;
+    max-width: 600px;
+    width: 90%;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding : 30px;
+}
+.app h1{
+    font-size: 25px;
+    color: #001e40;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;    
+}
+.quiz{
+    padding: 20px 0;
+}
+.quiz h2{
+    font-size: 18px;
+    color: #001e40;
+    font-weight: 600;   
+}
+.btn{
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border:1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn:hover{
+    background: #001e40;
+    color: #fff;
+}
+.btn.active{
+    background: #001e40;
+    color: #fff;
+}
+.quiz ul{
+    list-style: none;
+    padding: 0;
+}
+.quiz ul li{
+    margin: 10px 0;
+}
+.quiz ul li input[type="radio"]{
+    margin-right: 10px;
+}
+.quiz ul li label{
+    cursor: pointer;
+}
+.quiz ul li label:hover{
+    color: #001e40;
+}
+.quiz ul li label.active{
+    color: #001e40;
+}
+.quiz ul li label.correct{
+    color: #28a745;
+}
+.quiz ul li label.incorrect{
+    color: #dc3545;
+}
+.quiz ul li label.correct:hover{
+    color: #28a745;
+}
+.quiz ul li label.incorrect:hover{
+    color: #dc3545;
+}
+.quiz ul li label.correct.active{
+    color: #28a745;
+}
+.quiz ul li label.incorrect.active{
+    color: #dc3545;
+}
+.quiz ul li label.correct:hover,
+.quiz ul li label.incorrect:hover{
+    text-decoration: underline;
+}
+.quiz ul li label.correct.active:hover,
+.quiz ul li label.incorrect.active:hover{
+    text-decoration: none;
+}
+.quiz ul li label.correct:before,
+.quiz ul li label.incorrect:before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+.quiz ul li label.correct:before{
+    background: #28a745;
+    border-color: #28a745;
+}
+#next-btn{
+    background: #001e40;
+    color:#fff;
+    font-weight: 600;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+}
+
+.correct {
+    background-color: #28a745 !important;
+    color: #fff !important;
+    border-color: #28a745 !important;
+}
+
+.wrong {
+    background-color: #dc3545 !important;
+    color: #fff !important;
+    border-color: #dc3545 !important;
+}
